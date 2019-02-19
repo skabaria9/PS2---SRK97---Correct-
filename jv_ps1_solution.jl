@@ -19,7 +19,7 @@ fraction_water_cell = 0.70                      # dimensionless
 fraction_dry_cell = 1 - fraction_water_cell     # dimensionless
 volume_of_single_cell = 9e-17                   # L/cell BIND: 114922
 mass_of_single_cell = 2.8e-13                   # g/cell BIND:103904
-number_of_rnapII = 4600            	            # copies/cells
+number_of_rnapII = 4600/2          	            # copies/cells
 fraction_RNAP_available = 0.25                  # dimensionless
 number_of_ribosome = 50000         	            # copies/cells
 mRNA_half_life_TF = 0.022                       # hrs
@@ -30,26 +30,26 @@ max_transcription_rate = 48.0                   # nt/sec
 transcription_initiation_time_contstant = 42   # sec, (kI)
 average_transcript_length = 1000   	            # nt
 av_number = 6.02e23                             # number/mol
-avg_gene_number = 2500                          # number of copies of a gene
+avg_gene_number = 2500                         # number of copies of a gene
 sample_size = 1.0                               # ml
 population_size = 1e8                           # cells/ml
 lacZ_gene_length = 3075                         # nt
 
-color1 = "red"
+color1 = "black"
 
 
 # What is the saturation constant, gene concentration et al?
 length_factor = (average_transcript_length/lacZ_gene_length)                                    # dimensionless
 rnapII_concentration = (fraction_RNAP_available*number_of_rnapII)*(1/av_number)*(1/mass_of_single_cell)*1e9               # nmol/gdw
 avg_gene_concentration = avg_gene_number*(1/mass_of_single_cell)*(1/av_number)*1e9              # nmol/gdw
-kcat_transcription = max_transcription_rate*(3600/average_transcript_length)                    # hr^-1
-kcat_transcription_initiation = (1/transcription_initiation_time_contstant)*(3600)              # hr^-1
-tau_factor = (kcat_transcription)/(kcat_transcription_initiation)                               # dimensionless
+kcat_transcription = max_transcription_rate*(3600/average_transcript_length)                   # hr^-1
+kcat_transcription_initiation = (1/transcription_initiation_time_contstant)*(3600)            # hr^-1
+tau_factor = (kcat_transcription)/(kcat_transcription_initiation)                              # dimensionless
 m = 0.03                                                                                        # Slope muM, McClure 1980
 
 # Compute the mu and degradation time from
-mugmax = (1/doubling_time_cell)*log(2)                                                          # hr^-1
-kdT = -(1/mRNA_half_life_TF)*log(0.5)                                                           # hr^-1
+mugmax = (1/doubling_time_cell)*log(2)                                                      # hr^-1
+kdT = -(1/mRNA_half_life_TF)*log(0.5)                                                          # hr^-1
 
 # ---------------------------------------------------------------------------------------------- #
 # 1c - compute the mRNA predicted by the model -
