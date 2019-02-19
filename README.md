@@ -1,4 +1,4 @@
-# PS2---SRK97---Correct-
+# PS2---SRK97---Correct--- CHEME 5440/7770
 
 Julia Files
 
@@ -21,12 +21,12 @@ Latex file
 
 -Has the written answer for #3
 
+-Has important graphs embedded within the file
+
 
 
 
 Photos
-
--Graphs for 1 (green means parameter was doubled, red means parameter was halved)
 
 -Graphs for 2b
 
