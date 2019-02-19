@@ -26,7 +26,7 @@ Latex file
 
 Photos
 
--Graphs for 1
+-Graphs for 1 (green means parameter was doubled, red means parameter was halved)
 
 -Graphs for 2b
 
