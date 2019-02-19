@@ -13,7 +13,7 @@ Julia Files
 
 
 
-Latex file
+PDF Latex file
 
 -Has the written answer for #1
 
