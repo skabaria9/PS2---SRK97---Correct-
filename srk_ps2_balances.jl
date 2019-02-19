@@ -122,7 +122,7 @@ function srk_ps2_balances(t,x)
 
     #Set-up subfunction for f fractions
     n = 2.0 #assumption for all, from pset 1
-    w1_pset1 = 0.0; #for constant background translation, Assume none
+    w1_pset1 = 0.008; #for constant background translation, Assume none
     w2_pset1 = 300; #for I on p1
     w1_assume = 300; #for (p1 on p2) and (p1 on p3)
     w2_assume = 0.0; #for p2 on p3, set to 0 if broken, 50 if not broken
